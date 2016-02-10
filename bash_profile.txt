@@ -1,0 +1,75 @@
+
+# Author: Mzdhr <mmlaif@gmail.com>
+
+#alias
+alias des="cd /Users/Mzdhr/desktop"
+alias dev="cd ~/google\ drive/dev"
+
+alias ls="ls -lahS"
+alias nano="nano -m -S" #enabling mouse in nano editor, and smooth scrolling 
+alias cd..='cd ../'
+alias cd...='cd ../../'
+
+alias files_show='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'  #show hidden files
+alias files_hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'   #hide hidden files
+
+# open currently directory in finder
+alias oif='open -a "Finder" ./'
+
+# lock and suspend the mac
+alias lock=" /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend " 
+
+# Networking
+alias myip='curl ip.appspot.com'            # Public facing IP Address
+alias connections='lsof -i'  				# Show all open TCP/IP sockets
+alias flush_dns='dscacheutil -flushcache'   # Flush out the DNS Cache
+alias macInfo=" networksetup -listallhardwareports " # show devices mac address
+alias check_open_ports="lsof -Pi | grep LISTEN"
+alias edit_hosts="nano /etc/hosts"
+
+# Audio
+alias mute=" osascript -e 'set volume output muted true' "
+alias unmute=" osascript -e 'set volume output muted false' "
+
+# Set the default editor to Nano.
+export EDITOR=/usr/bin/nano
+
+# Where is my
+alias where='
+		which git;
+		which ruby; 
+		which php;
+		which node;
+		which brew;
+	'
+
+# Change format date to 
+# 30/12/2099 | 1:06PM
+alias datetime='date +"%d/%m/%Y|%l:%M%p"'
+
+
+# Git stuff
+# colors!
+BGREEN='\[\033[1;32m\]'
+GREEN='\[\033[0;32m\]'
+BRED='\[\033[1;31m\]'
+RED='\[\033[0;31m\]'
+BBLUE='\[\033[1;34m\]'
+BLUE='\[\033[0;34m\]'
+YELLOW='\[\033[1;33m\]'
+MAGENTA='\[\033[0;35m\]'
+LBLUE='\[\033[0;36m\]'
+GRAY='\[\033[0;37m\]'
+TEST='\[\033[9;34m\]'
+NORMAL='\[\033[00m\]'
+
+# Enable tab completion
+source ~/git-completion.bash
+
+# Change command prompt
+source ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+# '\u' adds the name of the current user to the prompt
+# '\$(__git_ps1)' adds git-related stuff
+# '\W' adds the name of the current directory
+export PS1="$RED\u$GREE\$(__git_ps1)$LBLUE \W $ $reset"
