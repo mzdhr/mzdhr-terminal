@@ -1,14 +1,35 @@
-git-completion.bash
-A bash completion script for git.
-Move it in your home location folder. Then Add the following line to your .bash_profile:
+# Mzdhr Terminal Read Me File
+This repository contained my files that I used to make the Terminal better on Mac! Feel free to use any of them.
+
+## Auto Complete Script for Git
+**File Name:** git-completion.bash
+
+**Description:** A bash completion script for git.
+
+**How To Use:** Move it in your home directory folder. Then Add the following line to your .bash_profile:
+
+```
 source ~/git-completion.bash
+```
 
-git-prompt.sh
-Script that provides useful information (in your prompt) about the repository that you are in.
-Move it in your home folder. Then add the following line to your .bash_profile:
+
+## Git Repository Script
+
+**File Name:** git-prompt.sh
+
+**Description:** Script that provides useful information (in your prompt) about the repository that you are in.
+
+**How To Use:** Move it in your home directory folder. Then add the following line to your .bash_profile:
+
+```
 source ~/git-prompt.sh
+```
 
-bash_profile
-My won custom .bash_profile for my terminal
-To use it: rename it to .bash_profile in your home directory, use nano editor to do that in easy and fast way.
 
+## My Own Bash Profile
+
+**File Name:** bash_profile.txt
+
+**Description:** My won custom .bash_profile for my terminal
+
+**How To Use:** Move it to your home directory folder, Then rename it to .bash_profile *don't forget to delete the .txt*. It will be hidden therefore use nano editor from the terminal if you want to make any change to it.
