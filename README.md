@@ -33,3 +33,24 @@ source ~/git-prompt.sh
 **Description:** My won custom .bash_profile for my terminal
 
 **How To Use:** Move it to your home directory folder, Then rename it to .bash_profile *don't forget to delete the .txt*. It will be hidden therefore use nano editor from the terminal if you want to make any change to it.
+
+
+## Git Template File
+
+**File Name:** git-commit-template-and-style.txt
+
+**Description:** Template for commit messages, help you to remember the guide rulls.
+
+**How To Use:** Move it in your home directory folder. Then rename it, with terminal by this code:
+
+```
+mv git-commit-template-and-style.txt .gitcommitstyle.txt
+```
+
+After that run this command, to tell git that there is a global commit message template available to use.
+
+```
+git config --global commit.template ~/.gitcommitstyle.txt
+```
+
+**Note:** This file is too long if you like modify it, before rename it.
