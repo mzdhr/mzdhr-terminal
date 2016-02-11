@@ -1,0 +1,56 @@
+
+################################################## <--- 50 chars length for the subject
+# Examples:
+# fix: loading page issues
+# feat: select book photo
+# test: new upload methods, no code change
+# :bug: fix: couple of unit tests for IE9
+# -------------------------
+# *** Commit Style ***
+# type: subject
+# body
+# footer
+# -------------------------
+# *** More Details ***
+# The Type:
+# feat: a new feature
+# fix: a bug fix
+# docs: changes to documentation
+# style: formatting, missing semi colons, etc; no code change
+# refactor: refactoring production code
+# test: adding tests, refactoring test; no production code change
+# chore: updating build tasks, package manager configs, etc; no production code change
+# ------------
+# The Subject:
+# Subjects should be no greater than 50 characters, should begin with a capital letter and do not end with a period.
+# Use an imperative tone to describe what a commit does, rather than what it did. For example, use change; not changed or changes.
+# ------------
+# The Body:
+# Not all commits are complex enough to warrant a body, therefore it is optional and only used when a commit requires a bit of explanation and context. Use the body to explain the what and why of a commit, not the how.
+# When writing a body, the blank line between the title and the body is required and you should limit the length of each line to no more than 72 characters.
+# ------------
+# The Footer:
+# The footer is optional and is used to reference issue tracker IDs.
+# Fixes #45 <--- will close the issue number 45, once the commit is merged into the default branch.
+# More info on:
+# https://help.github.com/articles/closing-issues-via-commit-messages/
+# -------------------------
+# Icons (Optional):
+# :art: when improving the format/structure of the code
+# :racehorse: when improving performance
+# :non-potable_water: when plugging memory leaks
+# :memo: when writing docs
+# :penguin: when fixing something on Linux
+# :apple: when fixing something on Mac OS
+# :checkered_flag: when fixing something on Windows
+# :bug: when fixing a bug
+# :fire: when removing code or files
+# :green_heart: when fixing the CI build
+# :white_check_mark: when adding tests
+# :lock: when dealing with security
+# :arrow_up: when upgrading dependencies
+# :arrow_down: when downgrading dependencies
+# :shirt: when removing linter warnings
+# -------------------------
+# Link To This Style:
+# My Template Link On GitHub
