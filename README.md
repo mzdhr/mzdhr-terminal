@@ -54,3 +54,17 @@ git config --global commit.template ~/.gitcommitstyle.txt
 ```
 
 **Note:** This file is too long if you like modify it, before rename it.
+
+
+## Git Global Ignore File
+
+**File Name:** gitignore_global.txt
+
+**Description:** Global file contained some file types to be ignored by git.
+
+**How To Use:** Move it in your home directory folder. Then run these command lines to rename and set it:
+
+```
+mv gitignore_global.txt .gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+```
